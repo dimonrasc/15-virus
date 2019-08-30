@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="copyright" lang="ru" content="Раскидной Дмитрий" />
+    <meta name="description" content="Интернет клуб Virus в городе Очакове" />
+    <meta name="document-state" content="Dynamic" />
+    <meta name="keywords" content="интернет клуб, очаков, вирус" />
+    <meta name="revisit" content="14" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-language" content="ru" />
+    <title>Интернет-клуб Virus</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<!--
+<script type="text/javascript">
+timeend= new Date();
+// IE и FF по разному отрабатывают getYear()
+timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+// для задания обратного отсчета до определенной даты укажите дату в формате:
+// timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ);
+// Для задания даты с точностью до времени укажите дату в формате:
+// timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ, ЧАСЫ-1, МИНУТЫ);
+function time() {
+	today = new Date();
+	today = Math.floor((timeend-today)/1000);
+	tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+	tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+	thour=today%24; today=Math.floor(today/24);
+	timestr=today +" дней "+ thour+" часов "+tmin+" минут "+tsec+" секунд";
+	document.getElementById('t').innerHTML=timestr;
+	window.setTimeout("time()",1000);
+}
+</script> -->
+</head>
+
+<body onload="time()">
+    <div class="content">
+        <a href="http://google.com"><img src="img/google.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://vk.com"><img src="img/vk.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://odnoklassniki.ru"><img src="img/odn.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://yandex.ru"><img src="img/yandex.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://youtube.com"><img src="img/youtube.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://ukr.net"><img src="img/ukr.net.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+        <a href="http://mail.ru"><img src="img/mail.ru.png" width="100" height="100" alt="ссылки сайта Очакова" />
+        </a>
+    </div>
+
+    <div class="header">VIRUS
+        <br/>
+        <div>Интернет клуб</div>
+    </div>
+   <!-- <p class="lastYear">До нового года осталось </br><span id="t"></span></p> -->
+
+    <div class="right-panel">
+        
+
+        <div id="SinoptikInformer" class="SinoptikInformer">
+            <div class="siHeader">
+                <div class="siLh">
+                    <div class="siMh"><a onmousedown="siClickCount();" href="http://sinoptik.ua/" target="_blank">Погода</a>
+                        <a onmousedown="siClickCount();" class="siLogo" href="http://sinoptik.ua/" target="_blank"><img alt="Прогноз погоды" src="http://informers.sinoptik.ua/img/t.gif" />
+                        </a> <span id="siHeader"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="siBody">
+                <div class="siCity">
+                    <div class="siCityName"><a onmousedown="siClickCount();" href="http://sinoptik.ua/погода-очаков" target="_blank">Погода в <span>Очакове</span></a>
+                    </div>
+                    <div id="siCont0" class="siBodyContent">
+                        <div class="siLeft">
+                            <div class="siTerm"></div>
+                            <div class="siT" id="siT0"></div>
+                            <div id="weatherIco0"></div>
+                        </div>
+                        <div class="siInf">
+                            <p>влажность: <span id="vl0"></span>
+                            </p>
+                            <p>давление: <span id="dav0"></span>
+                            </p>
+                            <p>ветер: <span id="wind0"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="siCity">
+                    <div class="siCityName"><a onmousedown="siClickCount();" href="http://sinoptik.ua/погода-николаев" target="_blank">Погода в <span>Николаеве</span></a>
+                    </div>
+                    <div id="siCont1" class="siBodyContent">
+                        <div class="siLeft">
+                            <div class="siTerm"></div>
+                            <div class="siT" id="siT1"></div>
+                            <div id="weatherIco1"></div>
+                        </div>
+                        <div class="siInf">
+                            <p>влажность: <span id="vl1"></span>
+                            </p>
+                            <p>давление: <span id="dav1"></span>
+                            </p>
+                            <p>ветер: <span id="wind1"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="siCity">
+                    <div class="siCityName"><a onmousedown="siClickCount();" href="http://sinoptik.ua/погода-одесса" target="_blank">Погода в <span>Одессе</span></a>
+                    </div>
+                    <div id="siCont2" class="siBodyContent">
+                        <div class="siLeft">
+                            <div class="siTerm"></div>
+                            <div class="siT" id="siT2"></div>
+                            <div id="weatherIco2"></div>
+                        </div>
+                        <div class="siInf">
+                            <p>влажность: <span id="vl2"></span>
+                            </p>
+                            <p>давление: <span id="dav2"></span>
+                            </p>
+                            <p>ветер: <span id="wind2"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="siLinks"><span><a onmousedown="siClickCount();" href="http://sinoptik.ua/погода-киев" target="_blank">Погода в Киеве</a>&nbsp;</span><span><a onmousedown="siClickCount();" href="http://sinoptik.ua/погода-луганск" target="_blank">Погода в Луганске</a>&nbsp;</span>
+                </div>
+            </div>
+            <div class="siFooter">
+                <div class="siLf">
+                    <div class="siMf"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" charset="UTF-8" src="http://informers.sinoptik.ua/js3.php?title=4&amp;wind=3&amp;cities=303019693,303017267,303018950&amp;lang=ru"></script>
+
+        <div class="radio">
+            <script type='text/javascript' src='js/radio.js'></script>
+        </div>
+    </div>
+</body>
+
+</html>

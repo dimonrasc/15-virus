@@ -1,0 +1,80 @@
+@charset "utf-8";
+body {
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b7d078;
+    min-height: 650px;
+}
+.header {
+    width: 510px;
+    height: 170px;
+    margin: 50px auto;
+    text-align: center;
+    color: #034000;
+    line-height: 184px;
+    display: block;
+    font-size: 92px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    text-decoration: none;
+}
+.header div {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.lastYear{
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+}
+.lastYear>span{
+	font-size: 50px;
+}
+.content {
+    display: block;
+    width: 890px;
+    height: 170px;
+    margin: 0 auto;
+}
+.content img {
+    border-radius: 50px;
+    float: left;
+    margin: 10px;
+    transition: border-radius 0.7s, height 0.7s, width 0.7s, margin 0.3s ease-out;
+}
+.content img:hover {
+    border-radius: 27px;
+    margin-top: 30px;
+    height: 120px;
+    width: 120px
+}
+.header div {
+    width: 307px;
+    height: 72px;
+    font-size: 39px;
+    padding-top: 0px;
+    margin-top: -107px;
+}
+.right-panel {
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 730px;
+    padding: 10px;
+}
+.SinoptikInformer {
+    width: 200px;
+    margin-top: 10px;
+}
+.radio {} .back-arrow {
+    position: fixed;
+    top: 27px;
+    left: 45px;
+}
