@@ -5,14 +5,14 @@
 <head>
 
     <meta charset="utf-8" />
-    <meta name="copyright" lang="ru" content="Раскидной Дмитрий" />
+    <title>15-VIRUS</title>
+    <meta name="copyright" lang="ru" content="" />
     <meta name="description" content="Интернет клуб Virus в городе Очакове" />
     <meta name="document-state" content="Dynamic" />
     <meta name="keywords" content="интернет клуб, очаков, вирус" />
     <meta name="revisit" content="14" />
     <meta name="robots" content="index, follow" />
     <meta http-equiv="content-language" content="ru" />
-    <title>Интернет-клуб Virus</title>
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -41,7 +41,7 @@ function time() {
 </script> -->
 </head>
 
-<body onload="time()">
+<body>
     <div class="content">
         <a href="http://google.com"><img src="img/google.png" width="100" height="100" alt="ссылки сайта Очакова" />
         </a>
@@ -151,5 +151,16 @@ function time() {
         </div>
     </div>
 </body>
+<div id="usd"></div>
+<script type="text/javascript">
+    $.ajax({
+        url: "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5", 
+        context: document.body,
+        success: function(data){
+          console.log(data);
+          //$('#usd').text(data);
+  }});
+  //$('#usd').text('change-text');
+</script>
 
 </html>
