@@ -133,6 +133,17 @@
     <div id="usd"></div>
 <script type="text/javascript">
     $.ajax({
+        type: "POST",
+        async: false, //The most important line
+        url: 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5',
+        timeout: 5000,
+        success: function(data){
+          console.log(data);
+          //$('#usd').text(data);
+  }
+                });
+
+    $.ajax({
         url: "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5", 
         context: document.body,
         success: function(data){
