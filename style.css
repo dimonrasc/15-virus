@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    background-image: url("img/background.jpg");
+    background-image: url("img/blue-miniature-shapes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #b7d078;
@@ -11,7 +11,7 @@ body {
     height: 170px;
     margin: 50px auto;
     text-align: center;
-    color: #034000;
+    color: black;
     line-height: 184px;
     display: block;
     font-size: 92px;
