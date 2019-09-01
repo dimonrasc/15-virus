@@ -16,7 +16,7 @@
 
     <link href="style.css" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
 
 </head>
 
@@ -130,15 +130,42 @@
         </div>
     </div>
 
-    <div id="usd"></div>
+    <div id="courency-valute">
+        <div id="courency-valute-usd">
+            <div>USD: </div>
+            <div id="courency-valute-usd-value"></div>
+        </div>
+        <div id="courency-valute-eur">
+            <div>EUR: </div>
+            <div id="courency-valute-eur-value"></div>
+        </div>
+    </div>
 <script type="text/javascript">
 	$.ajax({
         url: "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5",  
-        type: "GET",
-        success: function(result) { 
-            $("#usd").html(result); 
-                }});
+        type: 'GET',
+        success: function(data) { 
+
+            data.forEach(function(item, index, array) {
+                if(item.ccy == "USD"){
+                    $('#courency-valute-usd-value').text(item.buy.slice(0,-3) + ' / ' + item.sale.slice(0,-3));
+                }
+                else if(item.ccy == "EUR"){
+                    $('#courency-valute-eur-value').text(item.buy.slice(0,-3) + ' / ' + item.sale.slice(0,-3));
+                }
+                 //console.log(item, index);
+                 //console.log(item.ccy);
+                 //console.log(item.sale);
+            });
+
+            //$('#usd').text(data);
+            //console.log(data);
+            //console.log(data.ccy);
+                },
+        error: function(e) {
+            console.log(e.message);
+        }       
+                });
 </script>
-<a href="https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5">link-a</a>
 </body>
 </html>
