@@ -3,7 +3,7 @@ body {
     background-image: url("img/blue-miniature-shapes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #b7d078;
+    background-color: white;
     min-height: 650px;
 }
 .header {
