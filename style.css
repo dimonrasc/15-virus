@@ -1,10 +1,13 @@
 @charset "utf-8";
 body {
-    background-image: url("img/blue-miniature-shapes.jpg");
+    background-image: url("img/back42.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     min-height: 650px;
+}
+#image-down{
+    margin: -10px;
 }
 .header {
     width: 510px;
