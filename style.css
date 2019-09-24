@@ -8,6 +8,7 @@ body {
 }
 #image-down{
     margin: -10px;
+    width: 110%;
 }
 .header {
     width: 510px;
