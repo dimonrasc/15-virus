@@ -1,0 +1,13 @@
+Cpanel URL: http://cpanel.epizy.com
+Username:   epiz_24407176
+Password:   5rgxzwh8
+
+FTP Username:  epiz_24407176
+FTP Password:  5rgxzwh8
+FTP HostName:  ftp.epizy.com
+
+MySQL Host Name: sql207.epizy.com
+MySQL Password:  5rgxzwh8
+
+
+MySQL UserName:  epiz_24407176
